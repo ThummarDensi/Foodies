@@ -26,7 +26,7 @@ It allows users to explore food items, browse categories, and enjoy a modern UI 
 
 | Home Page | Login Menu | Food Page |
 |-----------|-----------|--------------|
-| ![Home](screenshot/home.png) | ![Login](screenshot/login.png) | ![Login](screenshot/dishes.png) |
+| ![Home](screenshort/home.png) | ![Login](screenshort/login.png) | ![Login](screenshort/dishes.png) |
 
 ---
 
