@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Order - Foodies</title>
+    <link rel="icon" href="../favicon.ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="order.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-1">
+            <a href="#" class="logo"> <i class="fas fa-utensils"></i> Foodies </a>
+            <h3 class="call"> <i class="fas fa-phone"></i> Call now: +123-456-7890 </h3>
+        </div>
+
+        <div class="header-2">
+            <div id="menu" class="fas fa-hamburger" aria-label="Menu"></div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html">home</a></li>
+                    <li><a href="../about/about.html">about</a></li>
+                    <li><a href="../dish/dish.html">dishes</a></li>
+                    <li><a href="order.html" class="active">order</a></li>
+                    <li><a href="../cart/cart.html">cart</a></li>
+                </ul>
+            </nav>
+
+            <div class="share">
+                <a href="../login/login.html" id="login-link"><i class="fas fa-user"></i> Login</a>
+                <a href="../register/register.html" id="register-link"><i class="fas fa-user-plus"></i> Register</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="section-title">Delivery Details</div>
+        <form>
+            <div class="form-group">
+                <label for="name" style="font-size: 15px;">Full Name</label>
+                <input type="text" id="name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+                <label for="address" style="font-size: 15px;">Delivery Address</label>
+                <textarea id="address" rows="3" placeholder="123 Main Street, City, ZIP" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="phone" style="font-size: 15px;">Mobile Number</label>
+                <input type="text" id="phone" placeholder="+91 98765 43210" required>
+            </div>
+            <div class="form-group">
+                <label for="instructions" style="font-size: 15px;">Special Instructions</label>
+                <textarea id="instructions" rows="2" placeholder="Leave at the door, no onions, etc."></textarea>
+            </div>
+        </form>
+
+        <div class="order-summary">
+            <div class="section-title">Your Items</div>
+            <div class="order-item">
+                <span>🍕 Cheese Pizza x1</span>
+                <span>₹250</span>
+            </div>
+            <div class="order-item">
+                <span>🥤 Cold Coffee x2</span>
+                <span>₹200</span>
+            </div>
+            <div class="order-item">
+                <span>🍟 French Fries x1</span>
+                <span>₹110</span>
+            </div>
+            <div class="total">Total: ₹560</div>
+        </div>
+
+        <button class="place-order-btn"><a href="../index.html" style="color: white;">Place Order</a></button>
+    </div>
+
+    <section class="footer">
+        <img src="../images/shape-top.png" alt="">
+        <div class="box-container">
+            <div class="box">
+                <h3 class="heading"> <span>why choose us?</span> </h3>
+                <p>Literary-inspired dishes, Fresh, sustainable ingredients, Diverse, customizable menu Cozy</p>
+            </div>
+            <div class="box">
+                <h3 class="heading"> <span>locations</span> </h3>
+                <a href="#">India</a>
+                <a href="#">USA</a>
+                <a href="#">France</a>
+                <a href="#">Russia</a>
+            </div>
+
+            <div class="box">
+                <h3 class="heading"> <span>quick links</span> </h3>
+                <a href="../index.html">home</a>
+                <a href="../about/about.html">about</a>
+                <a href="../dish/dish.html">dishes</a>
+                <a href="../order/order.html">order</a>
+                <a href="../cart/cart.html">cart</a>
+            </div>
+
+            <div class="box">
+                <h3 class="heading"> <span>contact us</span> </h3>
+                <p> <i class="fas fa-map-marker-alt"></i> mumbai, india 400104 </p>
+                <p> <i class="fas fa-envelope"></i> foodservices@gmail.com </p>
+                <p> <i class="fas fa-globe"></i> www.yourwebsite.com </p>
+            </div>
+
+        </div>
+
+        <h1 class="credit"> created by <span>food services</span> | all rights reserved! </h1>
+
+    </section>
+
+    <script>
+        document.getElementById('menu').onclick = function () {
+            this.classList.toggle('fa-times');
+            document.querySelector('.navbar').classList.toggle('nav-toggle');
+        };
+    </script>
+</body>
+
+</html>

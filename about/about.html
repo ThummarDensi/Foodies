@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Foodies</title>
+    <link rel="icon" href="../favicon.ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+        <header>
+        <div class="header-1">
+            <a href="#" class="logo"> <i class="fas fa-utensils"></i> Foodies </a>
+            <h3 class="call"> <i class="fas fa-phone"></i> Call now: +123-456-7890 </h3>
+        </div>
+
+        <div class="header-2">
+            <div id="menu" class="fas fa-hamburger" aria-label="Menu"></div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html">home</a></li>
+                    <li><a href="about.html" class="active">about</a></li>
+                    <li><a href="../dish/dish.html">dishes</a></li>
+                    <li><a href="../order/order.html">order</a></li>
+                    <li><a href="../cart/cart.html">cart</a></li>
+                </ul>
+            </nav>
+
+            <div class="share">
+                <a href="../login/login.html" id="login-link"><i class="fas fa-user"></i> Login</a>
+                <a href="../register/register.html" id="register-link"><i class="fas fa-user-plus"></i> Register</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="about" id="about">
+        <h1 class="headings"> <span> about us </span> </h1>
+        <div class="row">
+            <div class="contents">
+                <h3>Our Story at Foodie Haven</h3>
+                <p>At Foodie Haven, we’re passionate about bringing people together through the love of food. Established in 2020, our journey began with a simple mission: to create delicious, accessible, and sustainable meals that delight every palate. From our signature dishes to personalized meal plans, we use fresh, locally-sourced ingredients to craft culinary experiences that are both flavorful and memorable.</p>
+                <p>Our team of expert chefs, led by culinary visionaries, combines creativity with tradition to offer a diverse menu that caters to all tastes—whether you’re a fan of hearty comfort food or light, healthy options. We also provide catering services for events and curated meal plans for busy lifestyles, ensuring everyone can enjoy great food with ease.</p>
+                <p>Join us on this flavorful adventure, and let’s make every meal a celebration!</p>
+                <a href="../order/order.html"><button class="btn">order now</button></a>
+            </div>
+            <div class="image">
+                <img src="../images/girl-chef.png" alt="Girl Chef" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <img src="../images/shape-top.png" alt="Footer Shape" loading="lazy">
+        <div class="box-container">
+            <div class="box">
+                <h3 class="heading"> <span>why choose us?</span> </h3>
+                <p>Literary-inspired dishes, Fresh, sustainable ingredients, Diverse, customizable menu Cozy</p>
+            </div>
+            <div class="box">
+                <h3 class="heading"> <span>locations</span> </h3>
+                <a href="#">India</a>
+                <a href="#">USA</a>
+                <a href="#">France</a>
+                <a href="#">Russia</a>
+            </div>
+            <div class="box">
+                <h3 class="heading"> <span>quick links</span> </h3>
+                <a href="../index.html">home</a>
+                <a href="../about/about.html">about</a>
+                <a href="../dish/dish.html">dishes</a>
+                <a href="../order/order.html">order</a>
+                <a href="../cart/cart.html">cart</a>
+            </div>
+            <div class="box">
+                <h3 class="heading"> <span>contact us</span> </h3>
+                <p> <i class="fas fa-map-marker-alt" aria-label="Location"></i> mumbai, india 400104 </p>
+                <p> <i class="fas fa-envelope" aria-label="Email"></i> foodservices@gmail.com </p>
+                <p> <i class="fas fa-globe" aria-label="Website"></i> www.yourwebsite.com </p>
+            </div>
+        </div>
+        <h1 class="credit"> created by <span>food services</span> | all rights reserved! </h1>
+    </section>
+
+    <script>
+        document.getElementById('menu').onclick = function () {
+            this.classList.toggle('fa-times');
+            document.querySelector('.navbar').classList.toggle('nav-toggle');
+        };
+    </script>
+</body>
+
+</html>
